@@ -1,0 +1,42 @@
+[project]
+name = "applicationhelper"
+version = "0.1.0"
+description = "AI agent system that helps parse a CV, find matching jobs, tailor application documents, and pre-fill applications for manual review."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.69.0",
+    "pydantic>=2.9",
+    "sqlalchemy>=2.0",
+    "pypdf>=5.0",
+    "python-docx>=1.1",
+    "keyring>=25.0",
+    "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+gui = [
+    "PySide6>=6.7",
+]
+browser = [
+    "browser-use>=0.2",
+    "playwright>=1.47",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[project.scripts]
+applicationhelper = "applicationhelper.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/applicationhelper"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

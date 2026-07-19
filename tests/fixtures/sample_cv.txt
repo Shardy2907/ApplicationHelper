@@ -1,0 +1,19 @@
+Jane Doe
+jane@example.com | +1-555-0100 | Austin, TX
+
+SUMMARY
+Backend engineer with 5 years of experience building distributed systems.
+
+EXPERIENCE
+Acme Corp — Senior Software Engineer (2021-03 - Present)
+- Led migration of the billing service to Python 3.13
+- Mentored two junior engineers
+
+Globex Inc — Software Engineer (2018-06 - 2021-02)
+- Built the internal analytics pipeline
+
+EDUCATION
+State University — B.S. Computer Science (2014-08 - 2018-05)
+
+SKILLS
+Python, SQL, AWS, Docker
