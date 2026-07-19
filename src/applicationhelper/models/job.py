@@ -21,8 +21,11 @@ class ATSPlatform(str, Enum):
     LEVER = "lever"
     ASHBY = "ashby"
     WORKDAY = "workday"
+    SMARTRECRUITERS = "smartrecruiters"
+    SUCCESSFACTORS = "successfactors"
     COMPANY_SITE = "company_site"
     USER_SPECIFIED = "user_specified"
+    OPEN_WEB = "open_web"
 
 
 class JobPosting(BaseModel):
